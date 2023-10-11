@@ -1,0 +1,190 @@
+---
+import "animate.css";
+---
+
+<layout>
+  <style>
+    .navbar {
+      box-sizing: border-box;
+      outline: none;
+      border: none;
+      text-decoration: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem 7%;
+      background-color: rgba(1, 1, 1, 0.8);
+      border-bottom: 1px solid #26ad14;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 9999;
+    }
+
+    .navbar .navbar-logo {
+      box-sizing: border-box;
+      outline: none;
+      border: none;
+      text-decoration: none;
+      font-family: "Berkshire Swash", cursive;
+      font-size: 2rem;
+      font-weight: 800;
+      color: #fff;
+      font-style: italic;
+      text-shadow: 1px 1px 3px rgba(231, 237, 41, 0.5);
+    }
+    .navbar .navbar-logo span {
+      color: #26ad14;
+      font-size: 2rem;
+      font-weight: 800;
+    }
+
+    .navbar .navbar-nav a {
+      box-sizing: border-box;
+      outline: none;
+      border: none;
+      text-decoration: none;
+      color: #fff;
+      display: inline-block;
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin: 1rem;
+      text-shadow: 1px 1px 3px rgba(231, 237, 41, 0.5);
+    }
+
+    .navbar .navbar-nav a:hover {
+      color: #26ad14;
+    }
+
+    .navbar .navbar-nav a::after {
+      content: "";
+      display: block;
+      padding-bottom: 0.5rem;
+      border-bottom: 0.1rem solid #26ad14;
+      transform: scaleX(0);
+      transition: 0.3s linear;
+    }
+
+    .navbar .navbar-nav a:hover::after {
+      transform: scaleX(0.5);
+    }
+  </style>
+  <nav class="navbar">
+    <a href="/" class="navbar-logo">SLBN <span>Badegan</span>Ponorogo.</a>
+
+    <div class="navbar-nav">
+      <a href="/">Home</a>
+      <a href="/about">Tentang Kami</a>
+      <a href="/portofolio">Portofolio</a>
+      <a href="/team">Team</a>
+      <a href="/contact">Kontak</a>
+    </div>
+  </nav>
+  <style>
+    .about {
+      min-height: 73vh;
+      padding: 6rem 7% 1.4rem;
+    }
+
+    .about h2 {
+      font-family: "Berkshire Swash", cursive;
+      text-align: center;
+      font-size: 2.6rem;
+      margin-bottom: 1rem;
+      text-shadow: 1px 1px rgb(205, 215, 17);
+    }
+    .about h2 span {
+      color: #26ad14;
+      font-size: 2.6rem;
+    }
+
+    .about h3 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-shadow: 1px 1px rgb(205, 215, 17);
+    }
+
+    .about .row {
+      display: flex;
+    }
+
+    .about .row .about-img {
+      flex: 1 1 45;
+      box-shadow: 20px 20px 20px 15px rgba(19, 19, 18, 0.5);
+      animation: zoomInDown;
+      animation-duration: 3s;
+    }
+
+    .about .row .about-img img {
+      width: 100%;
+    }
+
+    .about .row .content {
+      flex: 1 1 35;
+      padding: 0 1rem;
+    }
+
+    .about .row .content p {
+      margin-bottom: 0.8rem;
+      font-size: 1.4rem;
+      font-weight: 300;
+      line-height: 1.6;
+    }
+  </style>
+  <section id="about" class="about">
+    <h2><span>Tentang</span> Kami</h2>
+
+    <div class="row">
+      <div class="about-img animate__animated animate__zoomInDown">
+        <img src="img/about2.jpg" alt="tentang kami" />
+      </div>
+      <div class="content">
+        <h3>Kelompok I</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
+          accusantium!
+        </p>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+    </div>
+  </section>
+</layout>
+
+<style>
+  .footer {
+    background: #202020;
+    color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+    border-top: 1px solid #26ad14;
+  }
+  .footer p {
+    display: block;
+    padding-top: 15px;
+  }
+  .footer span {
+    color: #55acee;
+    font-weight: bold;
+  }
+
+  .footer .social-icon {
+    padding-top: 15px;
+    padding-bottom: -15px;
+    color: #fff;
+  }
+</style>
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <p class="wow bounceIn">
+        Copyright &copy; nanangriyadi <span>Workforce</span> Studio . Design: <a
+          rel="nofollow noopener"
+          href="#"><span>templatemu</span></a
+        >
+      </p>
+    </div>
+  </div>
+</footer>

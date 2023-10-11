@@ -1,0 +1,295 @@
+---
+import layout from "../layout/MainLayout2.astro";
+---
+
+<layout>
+  <style>
+    .navbar {
+      box-sizing: border-box;
+      outline: none;
+      border: none;
+      text-decoration: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem 7%;
+      background-color: rgba(1, 1, 1, 0.8);
+      border-bottom: 1px solid #26ad14;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 9999;
+    }
+
+    .navbar .navbar-logo {
+      box-sizing: border-box;
+      outline: none;
+      border: none;
+      text-decoration: none;
+      font-family: "Berkshire Swash", cursive;
+      font-size: 2rem;
+      font-weight: 800;
+      color: #fff;
+      font-style: italic;
+      text-shadow: 1px 1px 3px rgba(231, 237, 41, 0.5);
+    }
+    .navbar .navbar-logo span {
+      color: #26ad14;
+      font-size: 2rem;
+      font-weight: 800;
+    }
+
+    .navbar .navbar-nav a {
+      box-sizing: border-box;
+      outline: none;
+      border: none;
+      text-decoration: none;
+      color: #fff;
+      display: inline-block;
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin: 1rem;
+      text-shadow: 1px 1px 3px rgba(231, 237, 41, 0.5);
+    }
+
+    .navbar .navbar-nav a:hover {
+      color: #26ad14;
+    }
+
+    .navbar .navbar-nav a::after {
+      content: "";
+      display: block;
+      padding-bottom: 0.5rem;
+      border-bottom: 0.1rem solid #26ad14;
+      transform: scaleX(0);
+      transition: 0.3s linear;
+    }
+
+    .navbar .navbar-nav a:hover::after {
+      transform: scaleX(0.5);
+    }
+  </style>
+  <nav class="navbar">
+    <a href="/" class="navbar-logo">SLBN <span>Badegan</span>Ponorogo.</a>
+
+    <div class="navbar-nav">
+      <a href="/">Home</a>
+      <a href="/about">Tentang Kami</a>
+      <a href="/portofolio">Portofolio</a>
+      <a href="/team">Team</a>
+      <a href="/contact">Kontak</a>
+    </div>
+  </nav>
+
+  <style>
+    .contact-us {
+      min-height: 75vh;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-image: url(../images/meetings-bg.jpg);
+      background-position: center center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 90px 7%;
+    }
+
+    .contact-us .container-maps {
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 20px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -ms-border-radius: 20px;
+      -o-border-radius: 20px;
+      box-shadow: 20px 20px 20px 15px rgba(19, 19, 18, 0.5);
+    }
+    .contact-us h2 {
+      font-family: "Berkshire Swash", cursive;
+    }
+
+    .contact-us #contact {
+      background-color: #fff;
+      border-radius: 20px;
+    }
+
+    .contact-us #contact h2 {
+      text-transform: uppercase;
+      color: #1f272b;
+      border-bottom: 1px solid #eee;
+      margin-bottom: 40px;
+      padding-bottom: 20px;
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .contact-us #contact input {
+      width: 100%;
+      height: 40px;
+      border-radius: 20px;
+      background-color: #f7f7f7;
+      outline: none;
+      border: none;
+      box-shadow: none;
+      font-size: 13px;
+      font-weight: 500;
+      color: #7a7a7a;
+      padding: 0px 15px;
+      margin-bottom: 30px;
+    }
+
+    .contact-us #contact textarea {
+      width: 100%;
+      min-height: 140px;
+      max-height: 180px;
+      border-radius: 20px;
+      background-color: #f7f7f7;
+      outline: none;
+      border: none;
+      box-shadow: none;
+      font-size: 13px;
+      font-weight: 500;
+      color: #7a7a7a;
+      padding: 15px;
+      margin-bottom: 30px;
+    }
+
+    .contact-us #contact button {
+      font-size: 13px;
+      color: #fff;
+      background-color: #a12c2f;
+      padding: 12px 30px;
+      display: inline-block;
+      border-radius: 22px;
+      font-weight: 500;
+      text-transform: uppercase;
+      transition: all 0.3s;
+      border: none;
+      outline: none;
+    }
+
+    .contact-us #contact button:hover {
+      opacity: 0.9;
+    }
+
+    .contact-us .right-info {
+      background-color: #a12c2f;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 20px 20px 20px 15px rgba(19, 19, 18, 0.5);
+    }
+
+    .contact-us .right-info ul li {
+      display: flex;
+      border-bottom: 1px solid rgba(250, 250, 250, 0.15);
+      margin-bottom: 30px;
+      padding-bottom: 30px;
+    }
+
+    .contact-us .right-info ul li:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    .contact-us .right-info ul li h6 {
+      color: #fff;
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .contact-us .right-info ul li p,
+    span {
+      font-size: 18px;
+      color: #fff;
+      font-weight: 600;
+    }
+  </style>
+  <section class="contact-us" id="contact">
+    <iframe
+      class="container-maps"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.224739896435!2d111.35501457465816!3d-7.871536492150621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e799dca43b011bd%3A0xa7f7358a14015352!2sSLB%20Negeri%20Badegan!5e0!3m2!1sid!2sid!4v1691151796413!5m2!1sid!2sid"
+      width="600"
+      height="450"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    >
+    </iframe>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="right-info">
+            <ul>
+              <li>
+                <p>
+                  Phone Number<br />
+                  <span> 010-020-0340</span>
+                </p>
+              </li>
+              <li>
+                <p>
+                  Email Address<br />
+                  <span> info@slbnbadeganponorogo.sch.id</span>
+                </p>
+              </li>
+              <li>
+                <p>
+                  Street Address<br />
+                  <span>Rio de Janeiro - RJ, 22795-008, Brazil</span>
+                </p>
+              </li>
+              <li>
+                <p>
+                  Website URL<br />
+                  <span> slbnbadeganponorogo.sch.id</span>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .footer {
+      background: #202020;
+      color: #ffffff;
+      padding-top: 10px;
+      padding-bottom: 15px;
+      text-align: center;
+      border-top: 1px solid #26ad14;
+    }
+    .footer p {
+      display: block;
+      padding-top: 15px;
+    }
+    .footer span {
+      color: #55acee;
+      font-weight: bold;
+    }
+
+    .footer .social-icon {
+      padding-top: 15px;
+      padding-bottom: -15px;
+      color: #fff;
+    }
+  </style>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <p class="wow bounceIn">
+          Copyright &copy; nanangriyadi <span>Workforce</span> Studio . Design: <a
+            rel="nofollow noopener"
+            href="#"><span>templatemu</span></a
+          >
+        </p>
+      </div>
+    </div>
+  </footer>
+</layout>

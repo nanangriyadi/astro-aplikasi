@@ -1,0 +1,70 @@
+---
+import Navbar from "./Navbar.astro";
+---
+
+<style>
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 7%;
+    background-color: rgba(1, 1, 1, 0.8);
+    border-bottom: 1px solid var(--primary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+  }
+
+  .navbar .navbar-logo {
+    font-family: "Berkshire Swash", cursive;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #fff;
+    font-style: italic;
+    text-shadow: 1px 1px 3px rgba(231, 237, 41, 0.5);
+  }
+  .navbar .navbar-logo span {
+    color: var(--primary);
+    font-size: 2rem;
+    font-weight: 800;
+  }
+
+  .navbar .navbar-nav a {
+    color: #fff;
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 1rem;
+    text-shadow: 1px 1px 3px rgba(231, 237, 41, 0.5);
+  }
+
+  .navbar .navbar-nav a:hover {
+    color: var(--primary);
+  }
+
+  .navbar .navbar-nav a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--primary);
+    transform: scaleX(0);
+    transition: 0.3s linear;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+  }
+</style>
+<nav class="navbar">
+  <a href="/" class="navbar-logo">SLBN <span>Badegan</span>Ponorogo.</a>
+
+  <div class="navbar-nav">
+    <a href="/">Home</a>
+    <a href="/about">Tentang Kami</a>
+    <a href="/portofolio">Portofolio</a>
+    <a href="/team">Team</a>
+    <a href="/contact">Kontak</a>
+  </div>
+</nav>

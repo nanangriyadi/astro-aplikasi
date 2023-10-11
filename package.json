@@ -1,0 +1,16 @@
+{
+  "name": "pkks-astro",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "astro": "^3.2.3"
+  }
+}
