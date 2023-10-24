@@ -35,7 +35,7 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 2. npm update 
 3. npm run dev
 
-Live Demo : https://slbbadegan-pkks-202310.netlify.app/
+
 
 
 
