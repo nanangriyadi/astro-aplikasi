@@ -1,5 +1,7 @@
 # Astro Starter Kit: Minimal
 
+![pkks](https://github.com/nanangriyadi/astro-aplikasi/assets/3053485/77914d51-4377-4bf6-8abc-17427fd9bded)
+
 ssh
 
 npm create astro@latest -- --template minimal
@@ -32,9 +34,7 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 2. npm update 
 3. npm run dev
 
-![image](https://github.com/nanangriyadi/astro-aplikasi/assets/3053485/d2440e28-c058-4443-a23e-3eaec2e7bf67)
-
-
+Live Demo : https://slbbadegan-pkks-202310.netlify.app/
 
 
 
