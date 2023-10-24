@@ -2,6 +2,7 @@
 
 ![pkks](https://github.com/nanangriyadi/astro-aplikasi/assets/3053485/77914d51-4377-4bf6-8abc-17427fd9bded)
 
+Live Demo : https://slbbadegan-pkks-202310.netlify.app/
 ssh
 
 npm create astro@latest -- --template minimal
